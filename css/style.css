@@ -11,12 +11,14 @@
 
     --main-color: #D9C2C8;
     --main-color-darker: #59353E;
+    --main-color-darker-op: #59353EEB;
     --main-color-lighter: #A69498;
     --secondary-color: #594F52;
     --secondary-color-lighter: #DF849C;
-    --text-color: #232b2b;
+    --text-color: #060606;
 
     --logo-background: #fbfaf9;
+    --logo-background-op: #fbfaf9d9;
 }
 
 * {
@@ -30,11 +32,16 @@
 
 html {
     height: 100%;
-    background-image: url("../img/background.jpg");
+    background-color: var(--main-color-lighter);
+    background-size: cover;
 }
 
 main {
     height: 100%;
+}
+
+.textColor-2 {
+    color: var(--logo-background);
 }
 
 /*      ---------------------
@@ -66,12 +73,12 @@ main {
 }
 
 .navbar-link {
-    padding: 1.05rem;
+    padding: 1rem 1rem 1.3rem;
 }
 
 .navbar-link:hover, .navbar-linkActive {
-    color: var(--secondary-color-lighter);
-    background-color: var(--secondary-color);
+    color: var(--logo-background);
+    background-color: var(--main-color-darker);
 }
 
 #logo {
@@ -83,7 +90,17 @@ main {
     width: 100%;
     height: 20rem;
     padding-top: 4rem;
-    border: 1px red solid;
+    /* border: 1px red solid; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/notebook-planner.jpg");
+    background-size: cover;
+}
+
+.hero-textBox {
+    width: fit-content;
+    margin: auto;
+    padding: 1rem 2rem;
+    border: 1px solid var(--logo-background);
+    color: var(--logo-background);
 }
 
 /* HERO | header text */
@@ -100,14 +117,14 @@ main {
 }
 
 .hero-aboutLink:hover {
-    color: var(--secondary-color);
+    color: var(--logo-background-op);
     text-decoration: underline;
 }
 
 /* ------ | PAGE CONTENT */
 .pageText {
     padding-top: 1rem;
-    border: 1px solid green;;
+    /* border: 1px solid green;; */
 }
 .pageText-img {
     display: inline-block;
