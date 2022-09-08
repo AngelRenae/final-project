@@ -2,12 +2,21 @@
         ROOT ELEMENTS / UNIVERSAL
         --------------------- */
 :root {
-    --main-color: #DDC2A1;
+    /* --main-color: #DDC2A1;
     --main-color-darker: #91795C;
     --main-color-lighter: #FFEBD4;
     --secondary-color: #4D7B91;
     --secondary-color-lighter: #A2CADE;
+    --text-color: #232b2b; */
+
+    --main-color: #D9C2C8;
+    --main-color-darker: #59353E;
+    --main-color-lighter: #A69498;
+    --secondary-color: #594F52;
+    --secondary-color-lighter: #DF849C;
     --text-color: #232b2b;
+
+    --logo-background: #fbfaf9;
 }
 
 * {
@@ -21,7 +30,7 @@
 
 html {
     height: 100%;
-    background-color: var(--main-color);
+    background-image: url("../img/background.jpg");
 }
 
 main {
@@ -34,7 +43,7 @@ main {
 
 /* ------ | NAVBAR */
 .navbar {
-    background-color: var(--main-color-darker);
+    background-color: var(--logo-background);
 }
 
 /* NAVBAR | ul */
@@ -43,7 +52,11 @@ main {
     justify-content: space-between;
 }
 
-.navbar-left, .navbar-right {
+.navbar-left {
+    padding-left: 1rem;
+}
+
+.navbar-right { 
     display: flex;
     padding: 1rem;
 }
@@ -59,6 +72,10 @@ main {
 .navbar-link:hover, .navbar-linkActive {
     color: var(--secondary-color-lighter);
     background-color: var(--secondary-color);
+}
+
+#logo {
+    width: 100px;
 }
 
 /* ------ | HERO */
