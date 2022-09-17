@@ -91,7 +91,7 @@ main {
 /* ------ | HERO */
 .hero {
     width: 100%;
-    height: 20rem;
+    height: 100%;
     padding-top: 4rem;
     /* border: 1px red solid; */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/notebook-planner.jpg");
@@ -238,11 +238,13 @@ main {
 /*      ---------------------
         CONTACT.HTML
         --------------------- */
+/* CONTACT | map */
 .map {
     display: inline-block;
     height: 85%;
 }
 
+/* CONTACT | form */
 .contact-form {
     width: 65%;
     max-width: 500px;
