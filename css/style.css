@@ -127,15 +127,17 @@ main {
 
 /* ------ | PAGE CONTENT */
 .pageText {
-    padding-top: 1rem;
+    padding: 1rem 0 0 6rem;
 }
 .index-pageText-video {
     display: inline-block;
     width: 30%;
+    margin-right: 1rem;
 }
 .pageText-body {
     display: inline-block;
-    width: 60%;
+    width: 40%;
+    vertical-align: top;
 }
 
 /* ------ | FOOTER */
@@ -224,10 +226,6 @@ main {
 }
 
 /* SIDE BAR | titles */
-.pTI-title {
-    font-family: 'PT Serif', serif;
-}
-
 .pTI-input-email {
     width: 80%;
 }
@@ -237,29 +235,26 @@ main {
 
 }
 
-/* SIDE BAR | text */
-
-/* SIDE BAR | a tags */
-
 /*      ---------------------
-        ABOUT.HTML
+        CONTACT.HTML
         --------------------- */
 .map {
     display: inline-block;
     height: 85%;
 }
 
-form {
+.contact-form {
     width: 65%;
+    max-width: 500px;
     display: inline-block;
     padding-left: 3rem;
     padding-top: 5rem;
     vertical-align: top;
 }
 
-form > * {
+.contact-form > * {
     display: inline-block;
-    width: 80%;
+    width: 100%;
     max-width: 500px;
     margin-bottom: .5rem;
     font-family: 'Poppins', sans-serif;
@@ -278,6 +273,7 @@ form > * {
 }
 
 #submit-bttn {
+    float: right;
     width: 7%;
     min-width: 75px;
     padding: .2rem;
